@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { LiaAngleDoubleUpSolid } from "react-icons/lia";
+import { BiUpArrow } from "react-icons/bi";
 
 const BackToTop = () => {
 	const [isVisible, setIsVisible] = useState(true);
@@ -34,7 +34,7 @@ const BackToTop = () => {
 			} }`}
 			onClick={scrollToTop}
 		>
-			<LiaAngleDoubleUpSolid size={24} />
+			<BiUpArrow size={24} />
 		</div>
 	);
 };
