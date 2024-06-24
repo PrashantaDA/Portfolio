@@ -1,16 +1,38 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import ThemeToggle from "./ThemeToggle";
 
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 import MovingLine from "./MovingLine";
 import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-
-gsap.registerPlugin(useGSAP);
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
+	const menuRef = useRef(null);
+
+	useEffect(() => {
+		if (menuRef.current) {
+			if (open) {
+				gsap.fromTo(
+					menuRef.current,
+					{
+						autoAlpha: 0,
+						pointerEvents: "none",
+					},
+					{
+						autoAlpha: 1,
+						pointerEvents: "all",
+						duration: 0.5,
+					}
+				);
+			} else {
+				gsap.set(menuRef.current, {
+					autoAlpha: 0,
+					pointerEvents: "none",
+				});
+			}
+		}
+	}, [open]);
 
 	const navList = [
 		{
@@ -21,7 +43,6 @@ const Header = () => {
 			id: 2,
 			title: "Projects",
 		},
-
 		{
 			id: 3,
 			title: "Contact",
@@ -43,7 +64,7 @@ const Header = () => {
 					<h1 className="text-lg font-semibold xs:hidden md:flex">Prashanta D Acharya</h1>
 				</a>
 
-				<ul className="items-center gap-10 text-lg font-medium flex ">
+				<ul className="items-center gap-10 text-lg font-medium flex">
 					{navList.map((item) => (
 						<li
 							key={item.id}
@@ -63,11 +84,14 @@ const Header = () => {
 											className="text-3xl cursor-pointer hover:rotate-90 transition-transform duration-300 ease-in-out"
 										/>
 
-										<ul className={`z-50 absolute right-[0] xs:top-[54px] md:top-[65px] bg-dark2 text-light dark:bg-darker w-full flex flex-col items-center gap-y-8 py-8`}>
+										<ul
+											ref={menuRef}
+											className="z-50 absolute right-[0] xs:top-[54px] md:top-[65px] bg-dark2 text-light dark:bg-darker w-full flex flex-col items-center gap-y-8 py-8"
+										>
 											{navList.map((item) => (
 												<li
 													key={item.id}
-													className="hover:text-dtext hover:shadow-bs1 px-2 transition-all duration-300 "
+													className="hover:text-dtext hover:shadow-bs1 px-2 transition-all duration-300"
 												>
 													<a
 														href={`#${item.title.toLowerCase()}`}
