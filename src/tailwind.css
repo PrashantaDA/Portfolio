@@ -1,0 +1,3 @@
+.social-icon {
+	@apply md:text-xl xs:text-lg;
+}
