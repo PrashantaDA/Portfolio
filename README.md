@@ -12,8 +12,8 @@ Technologies Used
 Frontend:
 HTML5
 TailwindCSS
-JavaScript (React.js)
-Shadcn
+React JS
+
 
 Others:
 Git & GitHub
