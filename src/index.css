@@ -21,8 +21,8 @@ body {
 #svg {
 	width: 200px;
 	height: 200px;
-	stroke: rgb(41, 51, 105);
-
+	stroke: rgb(1, 255, 255);
+	filter: drop-shadow(0 0 2px #00ffcc) drop-shadow(0 0 5px #00ffff);
 	fill-opacity: 1;
 	stroke-width: 4px;
 	stroke-dasharray: 4500;
