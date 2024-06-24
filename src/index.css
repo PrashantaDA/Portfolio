@@ -12,9 +12,8 @@ html {
 
 body {
 	font-family: "Alegreya Sans", sans-serif;
-	/* font-family: "Merriweather", sans-serif; */
-
 	overflow-x: hidden;
+	@apply dark:bg-dark dark:text-dtext;
 }
 
 /* SVG LOADER */
