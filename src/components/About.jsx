@@ -128,7 +128,9 @@ const About = () => {
 			className="w-full py-20 dark:bg-dark2 bg-light dark:text-dtext"
 		>
 			<div className="flex justify-center flex-col items-center gap-4">
-				<h1 className="text-4xl font-bold">About Me</h1>
+				<h1 className="text-4xl font-bold">
+					About <span className="text-[#0091ff]">Me</span>
+				</h1>
 				<p className="text-sm capitalize px-4 text-center">
 					Always <strong className="text-[#0866FF]">learning</strong>. Always <strong className="text-[#0866FF]">growing</strong>. Looking for{" "}
 					<strong className="text-[#0866FF]">new challenges</strong>.{" "}
