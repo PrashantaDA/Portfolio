@@ -1,3 +1,4 @@
+import { Movie, Store, YTube } from "../images/index";
 import { FaHtml5, FaReact, FaNpm, FaNodeJs, FaGithub, FaGit } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript, SiTailwindcss, SiMysql, SiMongodb, SiVisualstudiocode, SiNetlify, SiVite, SiStrapi } from "react-icons/si";
@@ -109,6 +110,53 @@ const Tools = [
 	},
 ];
 
-const ProjectDetails = [];
+const ProjectDetails = [
+	{
+		id: 1,
+		title: "Moveie",
+		desc: "App to search for movies from The Movie Database",
+		tech: ["React", "Styled Components", "TheMovieDBAPI"],
+		github: "https://github.com/PrashantaDA/movyedb",
+		link: "https://moveie.netlify.app/",
+		category: "Web App",
+		img: Movie,
+	},
+	{
+		id: 2,
+		title: "Silsaga",
+		desc: "A Simple Clothing and Jewellery store ",
+		tech: ["React", "TailwindCSS", "FakeStoreAPI"],
+		github: "https://github.com/PrashantaDA/fakestore",
+		link: "https://silsaga.netlify.app/",
+		category: "Web App",
+		img: Store,
+	},
+	{
+		id: 3,
+		title: "YTube",
+		desc: "A YouTube clone",
+		tech: ["React", "Material-UI", "RapidAPI"],
+		github: "https://github.com/PrashantaDA/YTube",
+		link: "https://ytubecl.netlify.app/",
+		category: "Web App",
+		img: YTube,
+	},
+	// {
+	// 	id: 4,
+	// 	title: "Silsaga",
+	// 	desc: "Silsaga is a dynamic web application developed using React and Tailwind CSS, powered by FakeStore API",
+	// 	tech: ["React", "TailwindCSS", "FakeStore API"],
+	// 	github: "https://github.com/PrashantaDA/fakestore",
+	// 	link: "https://silsaga.netlify.app/",
+	// },
+	// {
+	// 	id: 5,
+	// 	title: "Silsaga",
+	// 	desc: "Silsaga is a dynamic web application developed using React and Tailwind CSS, powered by FakeStore API",
+	// 	tech: ["React", "TailwindCSS", "FakeStore API"],
+	// 	github: "https://github.com/PrashantaDA/fakestore",
+	// 	link: "https://silsaga.netlify.app/",
+	// },
+];
 
 export { Navlinks, Frontend, Backend, Tools, ProjectDetails };

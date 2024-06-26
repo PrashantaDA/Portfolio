@@ -45,7 +45,7 @@ const Header = () => {
 				>
 					<img
 						className="xs:w-[54px] xs:h-[54px] md:w-[65px] md:h-[65px] py-2"
-						src="assets/images/Logo.png"
+						src="assets/Logo.png"
 						alt="Prashanta"
 					/>
 					<h1 className="text-lg font-semibold xs:hidden md:flex">Prashanta D Acharya</h1>

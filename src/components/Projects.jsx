@@ -2,6 +2,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Tabs from "./Tabs";
+import { ProjectDetails } from "../constants/index";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -21,8 +22,8 @@ const Projects = () => {
 					My Creative <span className="text-[#0091ff]">Portfolio</span>
 				</h1>
 			</div>
-			<div>
-				<Tabs />
+			<div className="">
+				<Tabs projects={ProjectDetails} />
 			</div>
 		</main>
 	);
