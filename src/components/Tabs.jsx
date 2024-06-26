@@ -16,7 +16,7 @@ const Tabs = () => {
 				{Object.keys(tabContent).map((tab) => (
 					<button
 						key={tab}
-						className={`py-2 px-4 focus:outline-none ${activeTab === tab ? "border-b-2 border-blue-500 text-blue-500" : "text-gray-500"}`}
+						className={`py-2 px-4 focus:outline-none ${activeTab === tab ? " dark:bg-dark2 dark:text-dtext" : "text-gray-500"}`}
 						onClick={() => setActiveTab(tab)}
 					>
 						{tab}
