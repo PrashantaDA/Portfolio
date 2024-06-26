@@ -1,30 +1,43 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import Cards from "./Cards";
 
-const Tabs = () => {
+const Tabs = ({ projects }) => {
 	const [activeTab, setActiveTab] = useState("All");
 
+	const filterProjects = (tab) => {
+		if (tab === "All") {
+			return projects;
+		}
+		return projects.filter((project) => project.category === tab);
+	};
+
 	const tabContent = {
-		All: <Cards />,
-		"Web Pages": <Cards />,
-		"Web Apps": <Cards />,
+		All: filterProjects("All"),
+		"Web Page": filterProjects("Web Page"),
+		"Web App": filterProjects("Web App"),
 	};
 
 	return (
-		<div className="mx-auto p-4">
-			<div className="flex space-x-4 border rounded-md">
+		<div className="w-full mx-auto p-4">
+			<div className="flex space-x-4 border rounded-md bg-darker text-light dark:bg-dark">
 				{Object.keys(tabContent).map((tab) => (
 					<button
 						key={tab}
-						className={`py-2 px-4 focus:outline-none ${activeTab === tab ? " dark:bg-dark2 dark:text-dtext" : "text-gray-500"}`}
+						className={`w-1/3 py-2 px-4 focus:outline-none ${activeTab === tab ? "dark:bg-darker text-light dark:text-dtext" : "text-slate-600"}`}
 						onClick={() => setActiveTab(tab)}
 					>
 						{tab}
 					</button>
 				))}
 			</div>
-			<div className="mt-4">
-				<div>{tabContent[activeTab]}</div>
+			<div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+				{tabContent[activeTab].map((project, index) => (
+					<Cards
+						key={index}
+						{...project}
+					/>
+				))}
 			</div>
 		</div>
 	);
