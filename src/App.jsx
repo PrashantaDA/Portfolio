@@ -10,6 +10,9 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
+
 const App = () => {
 	const [loading, setLoading] = useState(true);
 	useEffect(() => {
@@ -25,6 +28,18 @@ const App = () => {
 
 	return (
 		<>
+			<ToastContainer
+				position="top-center"
+				autoClose={5000}
+				hideProgressBar={false}
+				newestOnTop={false}
+				closeOnClick
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+				theme="light"
+			/>
 			<Header />
 			<SocialIcons />
 			<main>
