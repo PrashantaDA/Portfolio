@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import Stack from "./Stack";
-import { frontend, backend, tools } from "../constants/index";
+import { Backend, Frontend, Tools } from "../constants/index";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -53,16 +53,16 @@ const About = () => {
 				<h1 className="text-4xl font-bold">Tech Stack</h1>
 				<div className="w-full mx-auto flex-wrap items-center flex justify-center gap-x-16 gap-y-12">
 					<Stack
-						header="FrontEnd"
-						stacks={frontend}
+						header="Frontend"
+						stacks={Frontend}
 					/>
 					<Stack
-						header="BackEnd"
-						stacks={backend}
+						header="Backend"
+						stacks={Backend}
 					/>
 					<Stack
 						header="Tools & Platform"
-						stacks={tools}
+						stacks={Tools}
 					/>
 				</div>
 			</div>
