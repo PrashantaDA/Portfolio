@@ -1,4 +1,6 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
 	const [formData, setFormData] = useState({
@@ -17,7 +19,21 @@ const ContactForm = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		// Handle form submission logic (e.g., send data to an API)
-		console.log("Form data:", formData);
+		const serviceID = import.meta.env.VITE_APP_SERVICE_KEY;
+		const templateID = import.meta.env.VITE_APP_TEMPLATE_KEY;
+		const userID = import.meta.env.VITE_APP_PUBLIC_KEY;
+
+		emailjs.send(serviceID, templateID, formData, userID).then(
+			(response) => {
+				console.log("SUCCESS!", response.status, response.text);
+				toast.success("Message sent successfully!");
+				setFormData({ name: "", email: "", message: "" });
+			},
+			(error) => {
+				console.error("FAILED...", error);
+				toast.error("Failed to send message. Please try again.");
+			}
+		);
 	};
 
 	return (
