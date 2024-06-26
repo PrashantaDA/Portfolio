@@ -36,7 +36,7 @@ const Tabs = ({ projects }) => {
 						className={`w-1/3 mx-auto py-2 px-4 font-semibold focus:outline-none ${activeTab === tab ? "dark:bg-darker bg-light dark:text-light text-darker" : "text-slate-600"}`}
 						onClick={() => {
 							setActiveTab(tab);
-							setVisibleProjects(6); // Reset visible projects on tab change
+							setVisibleProjects(6); // Reset visible projects
 						}}
 					>
 						{tab}
