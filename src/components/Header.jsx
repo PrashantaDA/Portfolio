@@ -6,6 +6,8 @@ import { MdClose } from "react-icons/md";
 import MovingLine from "./MovingLine";
 import { gsap } from "gsap";
 
+import { navLinks as navList } from "../constants/index";
+
 const Header = () => {
 	const [open, setOpen] = useState(false);
 	const menuRef = useRef(null);
@@ -34,21 +36,6 @@ const Header = () => {
 		}
 	}, [open]);
 
-	const navList = [
-		{
-			id: 1,
-			title: "About",
-		},
-		{
-			id: 2,
-			title: "Projects",
-		},
-		{
-			id: 3,
-			title: "Contact",
-		},
-	];
-
 	return (
 		<div className="w-full fixed shadow-sm top-0 z-20 backdrop-blur backdrop-filter dark:bg-dark dark:text-dtext xl:px-20">
 			<div className="flex items-center justify-between px-8 gap-20">
@@ -58,7 +45,7 @@ const Header = () => {
 				>
 					<img
 						className="xs:w-[54px] xs:h-[54px] md:w-[65px] md:h-[65px] py-2"
-						src="images/Logo.png"
+						src="assets/images/Logo.png"
 						alt="Prashanta"
 					/>
 					<h1 className="text-lg font-semibold xs:hidden md:flex">Prashanta D Acharya</h1>

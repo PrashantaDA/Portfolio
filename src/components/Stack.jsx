@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(useGSAP);
 
-const Card = ({ header, cards }) => {
+const Stack = ({ header, stacks }) => {
 	const containerRef = useRef(null);
 
 	useGSAP(() => {
@@ -18,7 +18,7 @@ const Card = ({ header, cards }) => {
 				ref={containerRef}
 				className=" relative p-10 border-2 border-dashed rounded-full border-spacing-4 border-gray-400/50"
 			>
-				{cards.map((card, index) => (
+				{stacks.map((stack, index) => (
 					<button
 						key={index}
 						className={` ${index === 0 ? "left-[45px] -top-[4px]" : ""}
@@ -30,12 +30,12 @@ const Card = ({ header, cards }) => {
 					>
 						<div className="flex items-center justify-center  transition-all duration-500 rounded-full z-[2] dark:bg-dark bg-darker text-light dark:text-dtext p-2 icons">
 							<a
-								href={card.site}
+								href={stack.site}
 								target="_blank"
 								rel="noreferrer"
 								className="hover:rotate-[360deg] transition-all duration-1000"
 							>
-								{card.icon}
+								{stack.icon}
 							</a>
 						</div>
 					</button>
@@ -52,4 +52,4 @@ const Card = ({ header, cards }) => {
 	);
 };
 
-export default Card;
+export default Stack;

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import Card from "./Card";
+import Stack from "./Stack";
+import { frontend, backend, tools } from "../constants/index";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -8,102 +9,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
-
-import { FaHtml5, FaReact, FaNpm, FaNodeJs, FaGithub, FaGit } from "react-icons/fa";
-import { IoLogoCss3 } from "react-icons/io";
-import { SiJavascript, SiTailwindcss, SiMysql, SiMongodb, SiVisualstudiocode, SiNetlify, SiVite, SiStrapi } from "react-icons/si";
-
-const frontend = [
-	{
-		name: "HTML",
-		icon: <FaHtml5 size={24} />,
-		site: "https://www.w3schools.com/html/",
-	},
-	{
-		name: "CSS",
-		icon: <IoLogoCss3 size={24} />,
-		site: "https://www.w3schools.com/css/",
-	},
-	{
-		name: "Javascript",
-		icon: (
-			<SiJavascript
-				size={24}
-				className="rounded-full"
-			/>
-		),
-		site: "https://www.javascript.com/",
-	},
-	{
-		name: "React",
-		icon: <FaReact size={24} />,
-		site: "https://reactjs.org/",
-	},
-	{
-		name: "Tailwind",
-		icon: <SiTailwindcss size={24} />,
-		site: "https://tailwindcss.com/",
-	},
-];
-const backend = [
-	{
-		name: "NodeJS",
-		icon: <FaNodeJs size={24} />,
-		site: "https://nodejs.org/en/",
-	},
-	{
-		name: "NPM",
-		icon: <FaNpm size={24} />,
-		site: "https://www.npmjs.com/",
-	},
-	{
-		name: "MongoDB",
-		icon: <SiMongodb size={24} />,
-		site: "https://www.mongodb.com/",
-	},
-	{
-		name: "MySQL",
-		icon: <SiMysql size={24} />,
-		site: "https://www.mysql.com/",
-	},
-	{
-		name: "Strapi",
-		icon: (
-			<SiStrapi
-				size={24}
-				className="rounded-full"
-			/>
-		),
-		site: "https://strapi.io/",
-	},
-];
-const tools = [
-	{
-		name: "Git",
-		icon: <FaGit size={24} />,
-		site: "https://git-scm.com/",
-	},
-	{
-		name: "GitHub",
-		icon: <FaGithub size={24} />,
-		site: "https://github.com/",
-	},
-	{
-		name: "Visual Studio Code",
-		icon: <SiVisualstudiocode size={24} />,
-		site: "https://code.visualstudio.com/",
-	},
-	{
-		name: "Vite",
-		icon: <SiVite size={24} />,
-		site: "https://vitejs.dev/",
-	},
-	{
-		name: "Netlify",
-		icon: <SiNetlify size={24} />,
-		site: "https://www.netlify.com/",
-	},
-];
 
 const About = () => {
 	useGSAP(() => {
@@ -147,17 +52,17 @@ const About = () => {
 			<div className="max-w-[85%] mx-auto flex flex-col items-center gap-y-8 justify-center mt-16">
 				<h1 className="text-4xl font-bold">Tech Stack</h1>
 				<div className="w-full mx-auto flex-wrap items-center flex justify-center gap-x-16 gap-y-12">
-					<Card
+					<Stack
 						header="FrontEnd"
-						cards={frontend}
+						stacks={frontend}
 					/>
-					<Card
+					<Stack
 						header="BackEnd"
-						cards={backend}
+						stacks={backend}
 					/>
-					<Card
+					<Stack
 						header="Tools & Platform"
-						cards={tools}
+						stacks={tools}
 					/>
 				</div>
 			</div>
