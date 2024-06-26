@@ -50,7 +50,7 @@ const Home = () => {
 					<div>
 						<img
 							className="pic xs:w-60 xs:h-60 lg:w-80 lg:h-80 rounded-full xs:mb-8"
-							src="assets/dxb-.jpg"
+							src="assets/images/dxb-.jpg"
 							alt="Profile"
 						/>
 					</div>
