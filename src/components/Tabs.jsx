@@ -4,6 +4,7 @@ import Cards from "./Cards";
 
 const Tabs = ({ projects }) => {
 	const [activeTab, setActiveTab] = useState("All");
+	const [visibleProjects, setVisibleProjects] = useState(6);
 
 	const filterProjects = (tab) => {
 		if (tab === "All") {
@@ -18,26 +19,55 @@ const Tabs = ({ projects }) => {
 		"Web App": filterProjects("Web App"),
 	};
 
+	const handleLoadMore = () => {
+		setVisibleProjects((prev) => prev + 6);
+	};
+
+	const handleShowLess = () => {
+		setVisibleProjects(6);
+	};
+
 	return (
 		<div className="w-full mx-auto p-4">
 			<div className="flex space-x-4 border rounded-md bg-darker text-light dark:bg-dark">
 				{Object.keys(tabContent).map((tab) => (
 					<button
 						key={tab}
-						className={`w-1/3 py-2 px-4 focus:outline-none ${activeTab === tab ? "dark:bg-darker text-light dark:text-dtext" : "text-slate-600"}`}
-						onClick={() => setActiveTab(tab)}
+						className={`w-1/3 mx-auto py-2 px-4 focus:outline-none ${activeTab === tab ? "dark:bg-darker text-light dark:text-dtext" : "text-slate-600"}`}
+						onClick={() => {
+							setActiveTab(tab);
+							setVisibleProjects(6); // Reset visible projects on tab change
+						}}
 					>
 						{tab}
 					</button>
 				))}
 			</div>
-			<div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-				{tabContent[activeTab].map((project, index) => (
+			<div className="mt-8 w-[80%] mx-auto flex flex-wrap gap-x-6 gap-y-16 justify-between">
+				{tabContent[activeTab].slice(0, visibleProjects).map((project, index) => (
 					<Cards
 						key={index}
 						{...project}
 					/>
 				))}
+			</div>
+			<div className="w-full flex justify-center mt-8">
+				{visibleProjects < tabContent[activeTab].length && (
+					<button
+						onClick={handleLoadMore}
+						className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 mx-2"
+					>
+						Load More
+					</button>
+				)}
+				{visibleProjects > 6 && (
+					<button
+						onClick={handleShowLess}
+						className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 mx-2"
+					>
+						Show Less
+					</button>
+				)}
 			</div>
 		</div>
 	);
