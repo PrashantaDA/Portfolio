@@ -2,7 +2,7 @@ import { FaHtml5, FaReact, FaNpm, FaNodeJs, FaGithub, FaGit } from "react-icons/
 import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript, SiTailwindcss, SiMysql, SiMongodb, SiVisualstudiocode, SiNetlify, SiVite, SiStrapi } from "react-icons/si";
 
-const navLinks = [
+const Navlinks = [
 	{
 		id: 1,
 		title: "About",
@@ -17,7 +17,7 @@ const navLinks = [
 	},
 ];
 
-const frontend = [
+const Frontend = [
 	{
 		name: "HTML",
 		icon: <FaHtml5 size={24} />,
@@ -49,7 +49,7 @@ const frontend = [
 		site: "https://tailwindcss.com/",
 	},
 ];
-const backend = [
+const Backend = [
 	{
 		name: "NodeJS",
 		icon: <FaNodeJs size={24} />,
@@ -81,7 +81,7 @@ const backend = [
 		site: "https://strapi.io/",
 	},
 ];
-const tools = [
+const Tools = [
 	{
 		name: "Git",
 		icon: <FaGit size={24} />,
@@ -109,4 +109,6 @@ const tools = [
 	},
 ];
 
-export { navLinks, frontend, backend, tools };
+const ProjectDetails = [];
+
+export { Navlinks, Frontend, Backend, Tools, ProjectDetails };
