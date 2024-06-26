@@ -2,7 +2,7 @@ import { FaHtml5, FaReact, FaNpm, FaNodeJs, FaGithub, FaGit } from "react-icons/
 import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript, SiTailwindcss, SiMysql, SiMongodb, SiVisualstudiocode, SiNetlify, SiVite, SiStrapi } from "react-icons/si";
 
-import { Movie, Store, YTube, Gpt, Restro, Bank } from "../images/index";
+import { Movie, Store, YTube, Gpt, Restro, Bank, Pf3d } from "../images/index";
 
 const Navlinks = [
 	{
@@ -119,6 +119,68 @@ const ProjectDetails = [
 		img: Movie,
 		tech: ["React", "Styled Components", "TMDB API"],
 		category: "Web App",
+		link: "https://moveie.netlify.app/",
+		github: "https://github.com/PrashantaDA/movyedb",
+	},
+	{
+		id: 2,
+		title: "Silsaga",
+		desc: " Simple Clothing and Jewellery Store.",
+		img: Store,
+		tech: ["React", "Tailwind CSS", "Fakestore API"],
+		category: "Web App",
+		link: "https://silsaga.netlify.app/",
+		github: "https://app.netlify.com/sites/moveie/overview",
+	},
+	{
+		id: 3,
+		title: "Portfolio_3D",
+		desc: " Portfolio Website with 3D animations.",
+		img: Pf3d,
+		tech: ["React", "Three JS", "Tailwind CSS"],
+		category: "Web Page",
+		link: "https://prashantapf3d2.netlify.app/",
+		github: "https://github.com/PrashantaDA/3d_pf",
+	},
+	{
+		id: 4,
+		title: "YTube",
+		desc: " A YouTube Clone.",
+		img: YTube,
+		tech: ["React", "Material-UI", "Rapid API"],
+		category: "Web App",
+		link: "https://ytubecl.netlify.app/",
+		github: "https://github.com/PrashantaDA/YTube",
+	},
+	{
+		id: 5,
+		title: "Gericht Restaurant",
+		desc: "Modern Landing Page for a Restaurant.",
+		img: Restro,
+		tech: ["React", "CSS"],
+		category: "Web Page",
+		link: "https://modrestro.netlify.app/",
+		github: "https://github.com/PrashantaDA/ModernRestro",
+	},
+	{
+		id: 6,
+		title: "GPT-3",
+		desc: "A simple modern landing page.",
+		img: Gpt,
+		tech: ["React", "CSS"],
+		category: "Web Page",
+		link: "https://gpt3des.netlify.app/",
+		github: "https://github.com/PrashantaDA/Gpt3",
+	},
+	{
+		id: 7,
+		title: "Modern Bank",
+		desc: "Modern Landing Page for a Bank.",
+		img: Bank,
+		tech: ["React", "Tailwind CSS", "Vite"],
+		category: "Web Page",
+		link: "https://modbank.netlify.app/",
+		github: "https://github.com/PrashantaDA/MooBank",
 	},
 ];
 

@@ -4,5 +4,6 @@ import YTube from "./sites/YTube.png";
 import Gpt from "./sites/Gpt.png";
 import Restro from "./sites/Restro.png";
 import Bank from "./sites/Bank.png";
+import Pf3d from "./sites/Pf3d.png";
 
-export { Movie, Store, YTube, Restro, Bank, Gpt };
+export { Movie, Store, YTube, Restro, Bank, Gpt, Pf3d };
