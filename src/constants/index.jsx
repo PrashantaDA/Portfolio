@@ -2,6 +2,8 @@ import { FaHtml5, FaReact, FaNpm, FaNodeJs, FaGithub, FaGit } from "react-icons/
 import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript, SiTailwindcss, SiMysql, SiMongodb, SiVisualstudiocode, SiNetlify, SiVite, SiStrapi } from "react-icons/si";
 
+import { Movie, Store, YTube, Gpt, Restro, Bank } from "../images/index";
+
 const Navlinks = [
 	{
 		id: 1,
@@ -109,6 +111,15 @@ const Tools = [
 	},
 ];
 
-const ProjectDetails = [];
+const ProjectDetails = [
+	{
+		id: 1,
+		title: "Moveie",
+		desc: " Movie App to search for movies and view details.",
+		img: Movie,
+		tech: ["React", "Styled Components", "TMDB API"],
+		category: "Web App",
+	},
+];
 
 export { Navlinks, Frontend, Backend, Tools, ProjectDetails };
