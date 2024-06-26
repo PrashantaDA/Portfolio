@@ -50,8 +50,8 @@ const About = () => {
 				</p>
 			</div>
 			<div className="max-w-[85%] mx-auto flex flex-col items-center gap-y-8 justify-center mt-16">
-				<h1 className="text-4xl font-bold">Tech Stack</h1>
-				<div className="w-full mx-auto flex-wrap items-center flex justify-center gap-x-16 gap-y-12">
+				<h1 className="text-4xl font-bold pb-10">Tech Stack</h1>
+				<div className="w-full mx-auto flex-wrap items-center flex justify-center gap-x-20 gap-y-12">
 					<Stack
 						header="Frontend"
 						stacks={Frontend}
