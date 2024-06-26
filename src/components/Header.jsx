@@ -6,7 +6,7 @@ import { MdClose } from "react-icons/md";
 import MovingLine from "./MovingLine";
 import { gsap } from "gsap";
 
-import { navLinks as navList } from "../constants/index";
+import { Navlinks as navList } from "../constants/index";
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
