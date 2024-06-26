@@ -29,11 +29,11 @@ const Tabs = ({ projects }) => {
 
 	return (
 		<div className="w-full mx-auto p-4">
-			<div className="flex space-x-4 border rounded-md bg-darker text-light dark:bg-dark">
+			<div className="flex space-x-4 border rounded-md bg-dark2 text-light dark:bg-dark">
 				{Object.keys(tabContent).map((tab) => (
 					<button
 						key={tab}
-						className={`w-1/3 mx-auto py-2 px-4 focus:outline-none ${activeTab === tab ? "dark:bg-darker text-light dark:text-dtext" : "text-slate-600"}`}
+						className={`w-1/3 mx-auto py-2 px-4 font-semibold focus:outline-none ${activeTab === tab ? "dark:bg-darker bg-light dark:text-light text-darker" : "text-slate-600"}`}
 						onClick={() => {
 							setActiveTab(tab);
 							setVisibleProjects(6); // Reset visible projects on tab change
