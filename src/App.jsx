@@ -1,14 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense, lazy } from "react";
 
-import Header from "./components/Header";
 import Loader from "./components/Loader";
-import Home from "./components/Home";
-import SocialIcons from "./components/SocialIcons";
-import About from "./components/About";
-import BackToTop from "./components/BackToTop";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+
+const Header = lazy(() => import("./components/Header"));
+const Home = lazy(() => import("./components/Home"));
+const SocialIcons = lazy(() => import("./components/SocialIcons"));
+const About = lazy(() => import("./components/About"));
+const BackToTop = lazy(() => import("./components/BackToTop"));
+const Projects = lazy(() => import("./components/Projects"));
+const Contact = lazy(() => import("./components/Contact"));
+const Footer = lazy(() => import("./components/Footer"));
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
@@ -18,7 +19,7 @@ const App = () => {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setLoading(false);
-		}, 1700);
+		}, 1800);
 		return () => clearTimeout(timer);
 	}, []);
 
@@ -40,16 +41,18 @@ const App = () => {
 				pauseOnHover
 				theme="light"
 			/>
-			<Header />
-			<SocialIcons />
-			<main>
-				<Home />
-				<About />
-				<Projects />
-				<Contact />
-			</main>
-			<Footer />
-			<BackToTop />
+			<Suspense fallback={<></>}>
+				<Header />
+				<SocialIcons />
+				<main>
+					<Home />
+					<About />
+					<Projects />
+					<Contact />
+				</main>
+				<Footer />
+				<BackToTop />
+			</Suspense>
 		</>
 	);
 };
