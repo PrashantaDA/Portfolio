@@ -14,6 +14,9 @@ export default {
 			xxl: "1536px",
 		},
 		extend: {
+			borderRadius: {
+				custom: "61% 39% 74% 26% / 48% 45% 55% 52%    ",
+			},
 			fontSize: {
 				xs: "0.75rem",
 				sm: "0.875rem",
