@@ -23,12 +23,10 @@ const Frontend = [
 	{
 		name: "HTML",
 		icon: <FaHtml5 size={24} />,
-		site: "https://www.w3schools.com/html/",
 	},
 	{
 		name: "CSS",
 		icon: <IoLogoCss3 size={24} />,
-		site: "https://www.w3schools.com/css/",
 	},
 	{
 		name: "Javascript",
@@ -38,39 +36,32 @@ const Frontend = [
 				className="rounded-full"
 			/>
 		),
-		site: "https://www.javascript.com/",
 	},
 	{
 		name: "React",
 		icon: <FaReact size={24} />,
-		site: "https://reactjs.org/",
 	},
 	{
 		name: "Tailwind",
 		icon: <SiTailwindcss size={24} />,
-		site: "https://tailwindcss.com/",
 	},
 ];
 const Backend = [
 	{
 		name: "NodeJS",
 		icon: <FaNodeJs size={24} />,
-		site: "https://nodejs.org/en/",
 	},
 	{
 		name: "NPM",
 		icon: <FaNpm size={24} />,
-		site: "https://www.npmjs.com/",
 	},
 	{
 		name: "MongoDB",
 		icon: <SiMongodb size={24} />,
-		site: "https://www.mongodb.com/",
 	},
 	{
 		name: "MySQL",
 		icon: <SiMysql size={24} />,
-		site: "https://www.mysql.com/",
 	},
 	{
 		name: "Strapi",
@@ -87,27 +78,22 @@ const Tools = [
 	{
 		name: "Git",
 		icon: <FaGit size={24} />,
-		site: "https://git-scm.com/",
 	},
 	{
 		name: "GitHub",
 		icon: <FaGithub size={24} />,
-		site: "https://github.com/",
 	},
 	{
 		name: "Visual Studio Code",
 		icon: <SiVisualstudiocode size={24} />,
-		site: "https://code.visualstudio.com/",
 	},
 	{
 		name: "Vite",
 		icon: <SiVite size={24} />,
-		site: "https://vitejs.dev/",
 	},
 	{
 		name: "Netlify",
 		icon: <SiNetlify size={24} />,
-		site: "https://www.netlify.com/",
 	},
 ];
 
