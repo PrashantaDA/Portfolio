@@ -40,10 +40,7 @@ const ContactForm = () => {
 	return (
 		<div className="max-w-md mx-auto mt-10 p-6 bg-white dark:bg-dark dark:text-dtext rounded-lg shadow-md dark:shadow-dtext hover:shadow-lg">
 			<h2 className="text-2xl font-bold mb-6 text-center">Contact Me</h2>
-			<form
-				onSubmit={handleSubmit}
-				netlify
-			>
+			<form onSubmit={handleSubmit}>
 				<div className="mb-4">
 					<label
 						className="block  text-sm font-bold mb-2"

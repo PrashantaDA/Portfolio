@@ -21,7 +21,6 @@ const Home = () => {
 				transform: "translateY(0)",
 				scrollTrigger: {
 					trigger: ".el",
-					toggleActions: "play none none reverse",
 				},
 			}
 		);
@@ -34,7 +33,6 @@ const Home = () => {
 				duration: 1,
 				scrollTrigger: {
 					trigger: ".el",
-					toggleActions: "play none none reverse",
 				},
 			}
 		);
@@ -49,7 +47,7 @@ const Home = () => {
 				<div className="flex flex-1 flex-col items-center">
 					<div>
 						<img
-							className="pic xs:w-60 xs:h-60 lg:w-80 lg:h-80 rounded-full xs:mb-8"
+							className="pic xs:w-60 xs:h-60 lg:w-80 lg:h-80 rounded-custom xs:mb-8"
 							src="assets/dxb-.jpg"
 							alt="Profile"
 						/>

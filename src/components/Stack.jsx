@@ -9,7 +9,7 @@ const Stack = ({ header, stacks }) => {
 	const containerRef = useRef(null);
 
 	useGSAP(() => {
-		gsap.fromTo(containerRef.current, { autoAlpha: 0, x: 100 }, { autoAlpha: 1, x: 0, duration: 0.5, scrollTrigger: { trigger: containerRef.current } });
+		gsap.fromTo(containerRef.current, { autoAlpha: 0, x: -100 }, { autoAlpha: 1, x: 0, duration: 1, scrollTrigger: { trigger: containerRef.current } });
 	});
 
 	return (

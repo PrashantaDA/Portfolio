@@ -2,9 +2,21 @@
 import { useState } from "react";
 import Cards from "./Cards";
 
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(useGSAP);
+
 const Tabs = ({ projects }) => {
 	const [activeTab, setActiveTab] = useState("All");
 	const [visibleProjects, setVisibleProjects] = useState(6);
+
+	const cardRef = useRef(null);
+
+	useGSAP(() => {
+		gsap.fromTo(cardRef.current, { autoAlpha: 0, x: -100, y: 100 }, { autoAlpha: 1, x: 0, y: 0, duration: 0.8, scrollTrigger: { trigger: cardRef.current } });
+	});
 
 	const filterProjects = (tab) => {
 		if (tab === "All") {
@@ -43,7 +55,10 @@ const Tabs = ({ projects }) => {
 					</button>
 				))}
 			</div>
-			<div className="mt-8 w-[80%] mx-auto flex flex-wrap gap-x-6 gap-y-16 justify-between">
+			<div
+				ref={cardRef}
+				className="cardanim mt-8 w-[80%] mx-auto flex flex-wrap gap-x-6 gap-y-16 justify-between"
+			>
 				{tabContent[activeTab].slice(0, visibleProjects).map((project, index) => (
 					<Cards
 						key={index}
