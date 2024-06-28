@@ -3,30 +3,7 @@
 import Stack from "./Stack";
 import { Backend, Frontend, Tools } from "../constants/index";
 
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(useGSAP);
-gsap.registerPlugin(ScrollTrigger);
-
 const About = () => {
-	useGSAP(() => {
-		gsap.fromTo(
-			"#about",
-			{ autoAlpha: 0, transform: "translateX(100%)" },
-			{
-				autoAlpha: 1,
-				transform: "translateX(0)",
-				duration: 0.5,
-				delay: 0.2,
-				scrollTrigger: {
-					trigger: "#about",
-				},
-			}
-		);
-	});
-
 	return (
 		<main
 			id="about"
