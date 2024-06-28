@@ -4,8 +4,8 @@ import { FaGithub } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Cards = ({ img, title, desc, tech, github, link }) => (
-	<div className="relative xs:w-full md:w-[300px] mx-auto xs:p-4 md:p-6 dark:bg-dark2 border-none cursor-pointer flex flex-col shadow-md hover:shadow-lg dark:shadow-white items-center rounded-lg transition-all duration-300">
-		<div className="relative group">
+	<div className="relative group xs:w-full md:w-[300px] mx-auto xs:p-4 md:p-6 dark:bg-dark2 border-none cursor-pointer flex flex-col shadow-md hover:shadow-lg dark:shadow-white items-center rounded-lg transition-all duration-300">
+		<div className="relative ">
 			<div>
 				<img
 					alt="website"
