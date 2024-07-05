@@ -2,7 +2,7 @@ import { FaHtml5, FaReact, FaNpm, FaNodeJs, FaGithub, FaGit } from "react-icons/
 import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript, SiTailwindcss, SiMysql, SiMongodb, SiVisualstudiocode, SiNetlify, SiVite, SiStrapi } from "react-icons/si";
 
-import { Movie, Store, YTube, Gpt, Restro, Bank, Pf3d } from "../images/index";
+import { Movie, Store, YTube, Gpt, Restro, Bank, Pf3d, Poke } from "../images/index";
 
 const Navlinks = [
 	{
@@ -150,6 +150,16 @@ const ProjectDetails = [
 	},
 	{
 		id: 6,
+		title: "Pokedex",
+		desc: "The Pokemon Finder",
+		img: Poke,
+		tech: ["React", "SASS", "Poke API"],
+		category: "Web App",
+		link: "https://oakedex.netlify.app/",
+		github: "https://github.com/PrashantaDA/Pokedex",
+	},
+	{
+		id: 7,
 		title: "GPT-3",
 		desc: "A simple modern landing page.",
 		img: Gpt,
@@ -159,7 +169,7 @@ const ProjectDetails = [
 		github: "https://github.com/PrashantaDA/Gpt3",
 	},
 	{
-		id: 7,
+		id: 8,
 		title: "Modern Bank",
 		desc: "Modern Landing Page for a Bank.",
 		img: Bank,
