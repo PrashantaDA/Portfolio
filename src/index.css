@@ -16,6 +16,16 @@ body {
 	@apply dark:bg-dark dark:text-dtext;
 }
 
+.text-grad {
+	/* Gradient */
+	background-image: linear-gradient(to right top, #000000, #007b39, #000000, #007b39, #0f0f0f);
+
+	/* Text clipping */
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
 /* SVG LOADER */
 #svg {
 	width: 200px;
