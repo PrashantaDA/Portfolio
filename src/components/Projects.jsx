@@ -12,9 +12,9 @@ const Projects = () => {
 			className="xs:w-full sm:w-[90%] md:w-[85%] mx-auto py-20 flex flex-col items-center justify-center"
 		>
 			<div className="w-full text-center">
-				<h1 className="text-4xl font-bold mb-16">
+				<h2 className="text-4xl font-bold mb-16">
 					My Creative <span className="text-[#0091ff]">Portfolio</span>
-				</h1>
+				</h2>
 			</div>
 			<div className="w-full">
 				<Tabs projects={ProjectDetails} />

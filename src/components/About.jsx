@@ -10,9 +10,9 @@ const About = () => {
 			className="w-full py-20 dark:bg-dark2 bg-light dark:text-dtext"
 		>
 			<div className="flex justify-center flex-col items-center gap-4">
-				<h1 className="text-4xl font-bold">
+				<h2 className="text-4xl font-bold">
 					About <span className="text-[#0091ff]">Me</span>
-				</h1>
+				</h2>
 				<p className="text-sm capitalize px-4 text-center">
 					Always <strong className="text-[#0866FF]">learning</strong>. Always <strong className="text-[#0866FF]">growing</strong>. Looking for{" "}
 					<strong className="text-[#0866FF]">new challenges</strong>.{" "}
@@ -20,8 +20,11 @@ const About = () => {
 			</div>
 			<div className="max-w-[80%] mx-auto flex justify-center">
 				<p className="mt-16 text-lg text-gray-600 px-4 xs:max-w-full lg:max-w-[60%] text-justify">
-					I am a self-driven, career oriented specializing in front-end development. My expertise lies in building interactive web applications. Currently, I am working with
-					technologies like JavaScript and Typescript. <br />
+					<p>
+						I am a self-driven, career-oriented web developer specializing in front-end development. My expertise lies in building interactive web applications using JavaScript,
+						React, and TypeScript.
+					</p>
+					<br />
 					<br />I have completed my bachelor's degree in Computer Engineering from Tribhuvan University. I strongly believe in continuous learning and self development in every
 					situation.
 				</p>

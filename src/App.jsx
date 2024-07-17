@@ -19,7 +19,7 @@ const App = () => {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setLoading(false);
-		}, 1800);
+		}, 1200);
 		return () => clearTimeout(timer);
 	}, []);
 
@@ -31,7 +31,7 @@ const App = () => {
 		<>
 			<ToastContainer
 				position="top-center"
-				autoClose={5000}
+				autoClose={2500}
 				hideProgressBar={false}
 				newestOnTop={false}
 				closeOnClick

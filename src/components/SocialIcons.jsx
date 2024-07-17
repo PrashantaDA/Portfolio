@@ -8,6 +8,7 @@ const SocialIcons = () => {
 				href="https://www.facebook.com/PrasDixit/"
 				target="_blank"
 				rel="noreferrer"
+				alt="Facebook Profile"
 			>
 				<BsFacebook />
 			</a>
@@ -16,6 +17,7 @@ const SocialIcons = () => {
 				href="https://www.X.com/prdix_1"
 				target="_blank"
 				rel="noreferrer"
+				alt="X | Twitter Profile"
 			>
 				<BsTwitterX />
 			</a>
@@ -24,6 +26,7 @@ const SocialIcons = () => {
 				href="https://www.instagram.com/prasdixit"
 				target="_blank"
 				rel="noreferrer"
+				alt="Instagram Profile"
 			>
 				<BsInstagram />
 			</a>
@@ -32,6 +35,7 @@ const SocialIcons = () => {
 				href="https://www.github.com/prashantada"
 				target="_blank"
 				rel="noreferrer"
+				alt="Github Profile"
 			>
 				<BsGithub />
 			</a>

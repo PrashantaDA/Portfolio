@@ -49,7 +49,7 @@ const Home = () => {
 						<img
 							className="pic xs:w-60 xs:h-60 lg:w-80 lg:h-80 rounded-custom xs:mb-8"
 							src="assets/dxb-.jpg"
-							alt="Profile"
+							alt="Prashanta Dixit Acharya Profile Picture"
 						/>
 					</div>
 				</div>

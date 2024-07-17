@@ -36,7 +36,7 @@ body {
 	stroke-width: 4px;
 	stroke-dasharray: 4500;
 	stroke-dashoffset: 0;
-	animation: dash 5s linear infinite;
+	animation: dash 4s linear infinite;
 }
 
 @keyframes dash {
