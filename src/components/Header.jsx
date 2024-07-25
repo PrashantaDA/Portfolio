@@ -48,7 +48,7 @@ const Header = () => {
 						src="assets/Logo.png"
 						alt="Prashanta"
 					/>
-					<h1 className="text-lg font-semibold xs:hidden md:flex">Prashanta D Acharya</h1>
+					<h1 className="text-lg font-semibold xs:hidden md:flex text-grad">Prashanta D Acharya</h1>
 				</a>
 
 				<ul className="items-center gap-10 text-lg font-medium flex">

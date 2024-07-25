@@ -55,7 +55,7 @@ const Home = () => {
 				</div>
 				<div className="details flex flex-1">
 					<div className="xs:text-xl lg:text-3xl text-center flex flex-col ">
-						<p className="text-gray-500">Hi, I`m </p> <br /> <p className="font-bold xs:text-2xl lg:text-4xl text-grad dark:text-dtext">Prashanta Dixit Acharya.</p>
+						<p className="text-gray-500">Hi, I`m </p> <br /> <p className="font-bold xs:text-2xl lg:text-4xl text-dark dark:text-dtext">Prashanta Dixit Acharya.</p>
 						<p className="flex gap-2 justify-center items-center xs:text-md sm:text-xl  lg:text-3xl font-semibold my-6 text-gray-600">
 							<span>💻</span> Programmer. <br />
 							Web Developer. <span>💻</span>
