@@ -1,8 +1,0 @@
-.social-icon {
-	@apply md:text-xl xs:text-lg;
-}
-
-.social-icon:hover {
-	@apply scale-105;
-	filter: drop-shadow(0 0 5px #00ccff);
-}

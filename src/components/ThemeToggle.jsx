@@ -19,12 +19,12 @@ const ThemeToggle = () => {
 		if (theme === "dark") {
 			document.documentElement.classList.remove("dark");
 			localStorage.setItem("theme", "light");
-			window.location.reload();
+			window.scrollTo(0, 0);
 			setTheme("light");
 		} else {
 			document.documentElement.classList.add("dark");
 			localStorage.setItem("theme", "dark");
-			window.location.reload();
+			window.scrollTo(0, 0);
 			setTheme("dark");
 		}
 	};
