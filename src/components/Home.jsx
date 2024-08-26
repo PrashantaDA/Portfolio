@@ -66,7 +66,7 @@ const Home = () => {
 							 hover:dark:border-t-dtext hover:dark:border-l-dtext px-5 py-3 rounded-full"
 							>
 								<a
-									href="/resume.pdf"
+									href="/assets/resume.pdf"
 									target="_blank"
 									rel="noreferrer"
 								>
