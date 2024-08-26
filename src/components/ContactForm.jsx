@@ -94,7 +94,7 @@ const ContactForm = () => {
 				<div className="flex items-center justify-between">
 					<button
 						type="submit"
-						className=" dark:bg-darker hover:dark:bg-dtext bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+						className=" dark:bg-darker hover:dark:bg-dtext bg-dark hover:bg-darker text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
 					>
 						Send
 					</button>
