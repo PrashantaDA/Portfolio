@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { BiUpArrow } from "react-icons/bi";
 
 const BackToTop = () => {
-	const [isVisible, setIsVisible] = useState(true);
+	const [isVisible, setIsVisible] = useState(false);
 
 	useEffect(() => {
 		const handleScroll = () => {
