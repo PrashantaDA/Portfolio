@@ -12,7 +12,7 @@ html {
 body {
 	font-family: "Alegreya Sans", sans-serif;
 	overflow: hidden;
-	overflow: hidden;
+
 	@apply dark:bg-dark dark:text-dtext;
 }
 

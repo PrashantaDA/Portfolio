@@ -70,7 +70,7 @@ const Tabs = ({ projects }) => {
 				{visibleProjects < tabContent[activeTab].length && (
 					<button
 						onClick={handleLoadMore}
-						className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 mx-2"
+						className="px-4 py-2 bg-darker text-white rounded-md hover:bg-dark2 mx-2"
 					>
 						Load More
 					</button>
