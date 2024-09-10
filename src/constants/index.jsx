@@ -2,7 +2,7 @@ import { FaHtml5, FaReact, FaNpm, FaNodeJs, FaGithub, FaGit } from "react-icons/
 import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript, SiTailwindcss, SiMysql, SiMongodb, SiVisualstudiocode, SiNetlify, SiVite, SiStrapi } from "react-icons/si";
 
-import { Movie, Store, YTube, Gpt, Restro, Bank, Pf3d, Poke } from "../images/index";
+import { Movie, Store, YTube, Gpt, Restro, Bank, Pf3d, Poke, Rexipe } from "../images/index";
 
 const Navlinks = [
 	{
@@ -177,6 +177,16 @@ const ProjectDetails = [
 		category: "Web Page",
 		link: "https://modbank.netlify.app/",
 		github: "https://github.com/PrashantaDA/MooBank",
+	},
+	{
+		id: 9,
+		title: "Rexipe",
+		desc: "Platform for exploring culinary creations.",
+		img: Rexipe,
+		tech: ["React", "Tailwind CSS", "Spoonacular API"],
+		category: "Web App",
+		link: "https://rexipe.netlify.app/",
+		github: "https://github.com/PrashantaDA/rexipe",
 	},
 ];
 
