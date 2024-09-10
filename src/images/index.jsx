@@ -7,5 +7,6 @@ import Bank from "./sites/Bank.png";
 import Pf3d from "./sites/Pf3d.png";
 import Poke from "./sites/Poke.png";
 import Rexipe from "./sites/Rexipe.png";
+import Hotelix from "./sites/Hotelix.png";
 
-export { Movie, Store, YTube, Restro, Bank, Gpt, Pf3d, Poke, Rexipe };
+export { Movie, Store, YTube, Restro, Bank, Gpt, Pf3d, Poke, Rexipe, Hotelix };

@@ -2,7 +2,7 @@ import { FaHtml5, FaReact, FaNpm, FaNodeJs, FaGithub, FaGit } from "react-icons/
 import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript, SiTailwindcss, SiMysql, SiMongodb, SiVisualstudiocode, SiNetlify, SiVite, SiStrapi } from "react-icons/si";
 
-import { Movie, Store, YTube, Gpt, Restro, Bank, Pf3d, Poke, Rexipe } from "../images/index";
+import { Movie, Store, YTube, Gpt, Restro, Bank, Pf3d, Poke, Rexipe, Hotelix } from "../images/index";
 
 const Navlinks = [
 	{
@@ -179,7 +179,27 @@ const ProjectDetails = [
 		github: "https://github.com/PrashantaDA/MooBank",
 	},
 	{
+		id: 8,
+		title: "Modern Bank",
+		desc: "Modern Landing Page for a Bank.",
+		img: Bank,
+		tech: ["React", "Tailwind CSS", "Vite"],
+		category: "Web Page",
+		link: "https://modbank.netlify.app/",
+		github: "https://github.com/PrashantaDA/MooBank",
+	},
+	{
 		id: 9,
+		title: "HotelIX",
+		desc: "Modern Landing Page for a Hotel.",
+		img: Hotelix,
+		tech: ["React", "Tailwind CSS", "Vite"],
+		category: "Web Page",
+		link: "https://hotelix.netlify.app/",
+		github: "https://github.com/PrashantaDA/hotelix",
+	},
+	{
+		id: 10,
 		title: "Rexipe",
 		desc: "Platform for exploring culinary creations.",
 		img: Rexipe,
