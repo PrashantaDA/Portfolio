@@ -116,7 +116,7 @@ const ProjectDetails = [
 		tech: ["React", "Tailwind CSS", "Fakestore API"],
 		category: "Web App",
 		link: "https://silsaga.netlify.app/",
-		github: "https://app.netlify.com/sites/moveie/overview",
+		github: "https://github.com/PrashantaDA/SilhouetteXsaga",
 	},
 	{
 		id: 3,
