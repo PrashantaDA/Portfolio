@@ -20,10 +20,8 @@ const About = () => {
 			</div>
 			<div className="max-w-[80%] mx-auto flex justify-center">
 				<p className="mt-16 text-lg text-gray-600 px-4 xs:max-w-full lg:max-w-[60%] text-justify">
-					<p>
-						I am a self-driven, career-oriented web developer specializing in front-end development. My expertise lies in building interactive web applications using JavaScript,
-						React, and TypeScript.
-					</p>
+					I am a self-driven, career-oriented web developer specializing in front-end development. My expertise lies in building interactive web applications using JavaScript,
+					React, and TypeScript.
 					<br />
 					<br />I have completed my bachelor's degree in Computer Engineering from Tribhuvan University. I strongly believe in continuous learning and self development in every
 					situation.

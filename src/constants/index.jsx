@@ -101,7 +101,7 @@ const ProjectDetails = [
 	{
 		id: 1,
 		title: "Moveie",
-		desc: " Movie App to search for movies and view details.",
+		desc: "Movie search and details app.",
 		img: Movie,
 		tech: ["React", "Styled Components", "TMDB API"],
 		category: "Web App",
@@ -111,7 +111,7 @@ const ProjectDetails = [
 	{
 		id: 2,
 		title: "Silsaga",
-		desc: " Simple Clothing and Jewellery Store.",
+		desc: "Clothing and Jewellery Store.",
 		img: Store,
 		tech: ["React", "Tailwind CSS", "Fakestore API"],
 		category: "Web App",
@@ -121,7 +121,7 @@ const ProjectDetails = [
 	{
 		id: 3,
 		title: "Portfolio_3D",
-		desc: " Portfolio Website with 3D animations.",
+		desc: "Portfolio with 3D animations.",
 		img: Pf3d,
 		tech: ["React", "Three JS", "Tailwind CSS"],
 		category: "Web Page",
@@ -131,7 +131,7 @@ const ProjectDetails = [
 	{
 		id: 4,
 		title: "YTube",
-		desc: " A YouTube Clone.",
+		desc: "YouTube Clone.",
 		img: YTube,
 		tech: ["React", "Material-UI", "Rapid API"],
 		category: "Web App",
@@ -141,7 +141,7 @@ const ProjectDetails = [
 	{
 		id: 5,
 		title: "Gericht Restaurant",
-		desc: "Modern Landing Page for a Restaurant.",
+		desc: "Restaurant Landing Page.",
 		img: Restro,
 		tech: ["React", "CSS"],
 		category: "Web Page",
@@ -151,7 +151,7 @@ const ProjectDetails = [
 	{
 		id: 6,
 		title: "Pokedex",
-		desc: "The Pokemon Finder",
+		desc: "Pokemon Finder.",
 		img: Poke,
 		tech: ["React", "SASS", "Poke API"],
 		category: "Web App",
@@ -161,7 +161,7 @@ const ProjectDetails = [
 	{
 		id: 7,
 		title: "GPT-3",
-		desc: "A simple modern landing page.",
+		desc: "Modern Landing Page.",
 		img: Gpt,
 		tech: ["React", "CSS"],
 		category: "Web Page",
@@ -171,17 +171,7 @@ const ProjectDetails = [
 	{
 		id: 8,
 		title: "Modern Bank",
-		desc: "Modern Landing Page for a Bank.",
-		img: Bank,
-		tech: ["React", "Tailwind CSS", "Vite"],
-		category: "Web Page",
-		link: "https://modbank.netlify.app/",
-		github: "https://github.com/PrashantaDA/MooBank",
-	},
-	{
-		id: 8,
-		title: "Modern Bank",
-		desc: "Modern Landing Page for a Bank.",
+		desc: "Bank Landing Page.",
 		img: Bank,
 		tech: ["React", "Tailwind CSS", "Vite"],
 		category: "Web Page",
@@ -191,7 +181,7 @@ const ProjectDetails = [
 	{
 		id: 9,
 		title: "HotelIX",
-		desc: "Modern Landing Page for a Hotel.",
+		desc: "Hotel Landing Page.",
 		img: Hotelix,
 		tech: ["React", "Tailwind CSS", "Vite"],
 		category: "Web Page",
@@ -201,7 +191,7 @@ const ProjectDetails = [
 	{
 		id: 10,
 		title: "Rexipe",
-		desc: "Platform for exploring culinary creations.",
+		desc: "Culinary creations platform.",
 		img: Rexipe,
 		tech: ["React", "Tailwind CSS", "Spoonacular API"],
 		category: "Web App",

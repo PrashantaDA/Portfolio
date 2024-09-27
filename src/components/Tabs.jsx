@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Cards from "./Cards";
 
 import { useRef } from "react";
@@ -10,13 +11,18 @@ gsap.registerPlugin(useGSAP);
 
 const Tabs = ({ projects }) => {
 	const [activeTab, setActiveTab] = useState("All");
-	const [visibleProjects, setVisibleProjects] = useState(6);
+	const [visibleProjects, setVisibleProjects] = useState(8);
+	const [currentPage, setCurrentPage] = useState(1);
 
 	const cardRef = useRef(null);
 
 	useGSAP(() => {
 		gsap.fromTo(cardRef.current, { autoAlpha: 0, x: -100, y: 100 }, { autoAlpha: 1, x: 0, y: 0, duration: 0.8, scrollTrigger: { trigger: cardRef.current } });
 	});
+
+	useEffect(() => {
+		cardRef.current.scrollIntoView({ behavior: "smooth" });
+	}, [currentPage]);
 
 	const filterProjects = (tab) => {
 		if (tab === "All") {
@@ -31,13 +37,12 @@ const Tabs = ({ projects }) => {
 		"Web App": filterProjects("Web App"),
 	};
 
-	const handleLoadMore = () => {
-		setVisibleProjects((prev) => prev + 6);
+	const handlePageChange = (newPage) => {
+		setCurrentPage(newPage);
 	};
 
-	const handleShowLess = () => {
-		setVisibleProjects(6);
-	};
+	const visibleProjectsCount = tabContent[activeTab].length;
+	const totalPages = Math.ceil(visibleProjectsCount / visibleProjects);
 
 	return (
 		<div className="w-full mx-auto p-4">
@@ -45,10 +50,12 @@ const Tabs = ({ projects }) => {
 				{Object.keys(tabContent).map((tab) => (
 					<button
 						key={tab}
-						className={`w-1/3 mx-auto py-2 px-4 font-semibold focus:outline-none ${activeTab === tab ? "dark:bg-darker bg-light dark:text-light text-darker" : "text-slate-600"}`}
+						className={`w-1/3 mx-auto py-2 px-4 font-semibold focus:outline-none ${
+							activeTab === tab ? "dark:bg-darker bg-light dark:text-light font-bold text-darker" : "text-slate-600"
+						}`}
 						onClick={() => {
 							setActiveTab(tab);
-							setVisibleProjects(6); // Reset visible projects
+							setCurrentPage(1); // Reset current page
 						}}
 					>
 						{tab}
@@ -57,9 +64,9 @@ const Tabs = ({ projects }) => {
 			</div>
 			<div
 				ref={cardRef}
-				className="cardanim mt-8 w-[80%] mx-auto flex flex-wrap gap-x-6 gap-y-16 justify-between"
+				className=" mt-8 w-[90%] mx-auto flex flex-wrap gap-y-16 gap-x-2"
 			>
-				{tabContent[activeTab].slice(0, visibleProjects).map((project, index) => (
+				{tabContent[activeTab].slice((currentPage - 1) * visibleProjects, currentPage * visibleProjects).map((project, index) => (
 					<Cards
 						key={index}
 						{...project}
@@ -67,22 +74,17 @@ const Tabs = ({ projects }) => {
 				))}
 			</div>
 			<div className="w-full flex justify-center mt-8">
-				{visibleProjects < tabContent[activeTab].length && (
-					<button
-						onClick={handleLoadMore}
-						className="px-4 py-2 bg-darker text-white rounded-md hover:bg-dark2 mx-2"
-					>
-						Load More
-					</button>
-				)}
-				{visibleProjects > 6 && (
-					<button
-						onClick={handleShowLess}
-						className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700 mx-2"
-					>
-						Show Less
-					</button>
-				)}
+				<div className="flex space-x-2">
+					{Array.from({ length: totalPages }, (_, i) => (
+						<button
+							key={i}
+							onClick={() => handlePageChange(i + 1)}
+							className={`px-4 py-2 ${currentPage === i + 1 ? "bg-darker text-white" : "bg-light text-darker"} rounded-md`}
+						>
+							{i + 1}
+						</button>
+					))}
+				</div>
 			</div>
 		</div>
 	);
