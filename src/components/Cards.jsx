@@ -18,7 +18,7 @@ const Cards = ({ img, title, desc, tech, github, link }) => (
 					href={link}
 					target="_blank"
 					rel="noreferrer"
-					className="text-white hover:text-[#0091ff]"
+					className="text-white hover:text-[#0092ff]"
 				>
 					<FaExternalLinkAlt size={20} />
 				</a>
