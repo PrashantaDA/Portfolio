@@ -64,7 +64,7 @@ const Tabs = ({ projects }) => {
 			</div>
 			<div
 				ref={cardRef}
-				className=" mt-8 w-[90%] mx-auto flex flex-wrap gap-y-16 gap-x-2"
+				className=" mt-8 w-[90%] mx-auto flex flex-wrap gap-y-16 gap-x-3"
 			>
 				{tabContent[activeTab].slice((currentPage - 1) * visibleProjects, currentPage * visibleProjects).map((project, index) => (
 					<Cards
