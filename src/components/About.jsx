@@ -7,7 +7,7 @@ const About = () => {
 	return (
 		<main
 			id="about"
-			className="w-full py-20 dark:bg-dark2 bg-light dark:text-dtext"
+			className="w-full py-16 dark:bg-dark2 bg-light dark:text-dtext"
 		>
 			<div className="flex justify-center flex-col items-center gap-4">
 				<h2 className="text-4xl font-bold">
@@ -19,7 +19,7 @@ const About = () => {
 				</p>
 			</div>
 			<div className="max-w-[80%] mx-auto flex justify-center">
-				<p className="mt-16 text-lg text-gray-600 px-4 xs:max-w-full lg:max-w-[60%] text-justify">
+				<p className="mt-12 text-lg text-gray-600 px-4 xs:max-w-full lg:max-w-[60%] text-justify">
 					I am a self-driven, career-oriented web developer specializing in front-end development. My expertise lies in building interactive web applications using JavaScript,
 					React, and TypeScript.
 					<br />

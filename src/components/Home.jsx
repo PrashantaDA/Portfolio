@@ -41,7 +41,7 @@ const Home = () => {
 	return (
 		<main
 			id="home"
-			className="lg:h-[90vh] xs:h-screen lg:py-36 xs:py-10 mt-10 flex relative items-center dark:bg-dark dark:text-dtext text-dark "
+			className="h-[85dvh] lg:py-16 xs:py-10 mt-10 flex relative items-center dark:bg-dark dark:text-dtext text-dark "
 		>
 			<div className="flex xs:flex-col items-center xs:gap-2 lg:gap-10 lg:flex-row justify-between w-[70%] mx-auto el">
 				<div className="flex flex-1 flex-col items-center">

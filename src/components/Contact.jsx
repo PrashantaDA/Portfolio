@@ -6,7 +6,7 @@ const Contact = () => {
 	return (
 		<main
 			id="contact"
-			className=" py-20 bg-light dark:bg-dark2"
+			className=" py-16 bg-light dark:bg-dark2"
 		>
 			<div>
 				<div className="w-full text-center px-6 ">

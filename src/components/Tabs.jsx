@@ -20,10 +20,6 @@ const Tabs = ({ projects }) => {
 		gsap.fromTo(cardRef.current, { autoAlpha: 0, x: -100, y: 100 }, { autoAlpha: 1, x: 0, y: 0, duration: 0.8, scrollTrigger: { trigger: cardRef.current } });
 	});
 
-	useEffect(() => {
-		cardRef.current.scrollIntoView({ behavior: "smooth" });
-	}, [currentPage]);
-
 	const filterProjects = (tab) => {
 		if (tab === "All") {
 			return projects;
