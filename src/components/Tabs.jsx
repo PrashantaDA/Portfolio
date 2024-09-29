@@ -10,7 +10,7 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
 const Tabs = ({ projects }) => {
-	const [activeTab, setActiveTab] = useState("All");
+	const [activeTab, setActiveTab] = useState("All Projects");
 	const [visibleProjects, setVisibleProjects] = useState(8);
 	const [currentPage, setCurrentPage] = useState(1);
 
@@ -21,14 +21,14 @@ const Tabs = ({ projects }) => {
 	});
 
 	const filterProjects = (tab) => {
-		if (tab === "All") {
+		if (tab === "All Projects") {
 			return projects;
 		}
 		return projects.filter((project) => project.category === tab);
 	};
 
 	const tabContent = {
-		All: filterProjects("All"),
+		"All Projects": filterProjects("All Projects"),
 		"Web Page": filterProjects("Web Page"),
 		"Web App": filterProjects("Web App"),
 	};
