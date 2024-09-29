@@ -37,7 +37,7 @@ const Header = () => {
 	}, [open]);
 
 	return (
-		<div className="w-full fixed shadow-sm top-0 z-20 backdrop-blur backdrop-filter dark:bg-dark dark:text-dtext xl:px-20">
+		<div className="w-full fixed shadow-sm top-0 z-20 backdrop-blur-md backdrop-filter bg-light/20 dark:bg-dark/60 dark:text-dtext text-dark xl:px-20 transition-colors duration-300 ease-in-out">
 			<div className="flex items-center justify-between px-8 gap-20">
 				<a
 					href="#home"
