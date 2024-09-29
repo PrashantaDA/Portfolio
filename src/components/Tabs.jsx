@@ -35,6 +35,7 @@ const Tabs = ({ projects }) => {
 
 	const handlePageChange = (newPage) => {
 		setCurrentPage(newPage);
+		cardRef.current.scrollIntoView({ behavior: "smooth" }); // Scroll to the top of the cardRef element
 	};
 
 	const visibleProjectsCount = tabContent[activeTab].length;
@@ -42,7 +43,10 @@ const Tabs = ({ projects }) => {
 
 	return (
 		<div className="w-full mx-auto p-4">
-			<div className="flex space-x-4 border rounded-md bg-dark2 text-light dark:bg-dark">
+			<div
+				ref={cardRef}
+				className="flex space-x-4 border rounded-md bg-dark2 text-light dark:bg-dark"
+			>
 				{Object.keys(tabContent).map((tab) => (
 					<button
 						key={tab}
@@ -52,16 +56,14 @@ const Tabs = ({ projects }) => {
 						onClick={() => {
 							setActiveTab(tab);
 							setCurrentPage(1); // Reset current page
+							cardRef.current.scrollIntoView({ behavior: "smooth" }); // Scroll to the top of the cardRef element
 						}}
 					>
 						{tab}
 					</button>
 				))}
 			</div>
-			<div
-				ref={cardRef}
-				className="mt-8 w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-16 gap-x-4"
-			>
+			<div className="mt-8 w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-16 gap-x-4">
 				{tabContent[activeTab].slice((currentPage - 1) * visibleProjects, currentPage * visibleProjects).map((project, index) => (
 					<Cards
 						key={index}
