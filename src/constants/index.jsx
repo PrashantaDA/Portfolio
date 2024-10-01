@@ -2,7 +2,7 @@ import { FaHtml5, FaReact, FaNpm, FaNodeJs, FaGithub, FaGit } from "react-icons/
 import { IoLogoCss3 } from "react-icons/io";
 import { SiJavascript, SiTailwindcss, SiMysql, SiMongodb, SiVisualstudiocode, SiNetlify, SiVite, SiStrapi } from "react-icons/si";
 
-import { Movie, Store, YTube, Gpt, Restro, Bank, Pf3d, Poke, Rexipe, Hotelix } from "../images/index";
+import { Movie, Store, YTube, Restro, Pf3d, Poke, Rexipe, Hotelix } from "../images/index";
 
 const Navlinks = [
 	{
@@ -160,26 +160,6 @@ const ProjectDetails = [
 	},
 	{
 		id: 7,
-		title: "GPT-3",
-		desc: "Modern Landing Page.",
-		img: Gpt,
-		tech: ["React", "CSS"],
-		category: "Web Page",
-		link: "https://gpt3des.netlify.app/",
-		github: "https://github.com/PrashantaDA/Gpt3",
-	},
-	{
-		id: 8,
-		title: "Modern Bank",
-		desc: "Bank Landing Page.",
-		img: Bank,
-		tech: ["React", "Tailwind CSS", "Vite"],
-		category: "Web Page",
-		link: "https://modbank.netlify.app/",
-		github: "https://github.com/PrashantaDA/MooBank",
-	},
-	{
-		id: 9,
 		title: "HotelIX",
 		desc: "Hotel Landing Page.",
 		img: Hotelix,
@@ -189,7 +169,7 @@ const ProjectDetails = [
 		github: "https://github.com/PrashantaDA/hotelix",
 	},
 	{
-		id: 10,
+		id: 8,
 		title: "Rexipe",
 		desc: "Culinary creations platform.",
 		img: Rexipe,
