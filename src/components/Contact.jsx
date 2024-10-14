@@ -26,16 +26,6 @@ const Contact = () => {
 							/>
 							<p className="text-center ">apras.dixit@gmail.com</p>
 						</a>
-						<a
-							href="tel:+9779860664666"
-							className=" border rounded-lg transition-all duration-300 w-[260px] bg-[#cbF4F5] hover:bg-[#cefdff] mx-auto p-4 flex items-center justify-start gap-4 text-xl cursor-pointer"
-						>
-							<IoMdCall
-								size={24}
-								className="text-[#0091ff]"
-							/>
-							<p className="text-center ">+(977) 98606****6</p>
-						</a>
 					</div>
 
 					<ContactForm />
