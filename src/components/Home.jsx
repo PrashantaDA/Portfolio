@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Typewriter from "typewriter-effect";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -57,10 +58,17 @@ const Home = () => {
 					<div className="xs:text-xl lg:text-3xl text-center flex flex-col ">
 						<p className="text-gray-500">Hi, I`m </p> <br /> <p className="font-bold xs:text-2xl lg:text-4xl text-dark dark:text-dtext">Prashanta Dixit Acharya.</p>
 						<p className="flex gap-2 justify-center items-center xs:text-md sm:text-xl  lg:text-3xl font-semibold my-6 text-gray-600">
-							<span>💻</span> Programmer. <br />
-							Web Developer. <span>💻</span>
+							💻
+							<Typewriter
+								options={{
+									strings: ["Programmer.", "Web Developer.", "Learner."],
+									autoStart: true,
+									loop: true,
+								}}
+							/>
+							💻
 						</p>
-						<div className="flex flex-wrap xs:text-sm md:text-lg justify-center xs:gap-4 md:gap-8 font-semibold ">
+						<div className="flex flex-wrap xs:text-sm md:text-lg justify-center xs:gap-4 md:gap-8 font-semibold mt-12">
 							<button
 								className="transition-all duration-300 border-2 border-light dark:border-b-dtext dark:border-r-dtext bg-dark text-light hover:bg-darker hover:shadow-bs1 hover:dark:border-light hover:dark:shadow-bs1
 							 hover:dark:border-t-dtext hover:dark:border-l-dtext px-5 py-3 rounded-full"

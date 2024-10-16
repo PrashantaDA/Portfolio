@@ -1,6 +1,5 @@
 import ContactForm from "./ContactForm";
 import { PiMailbox } from "react-icons/pi";
-import { IoMdCall } from "react-icons/io";
 
 const Contact = () => {
 	return (
@@ -17,7 +16,7 @@ const Contact = () => {
 				<div className="w-full px-6 mt-8 ">
 					<div className="flex flex-col gap-4">
 						<a
-							className="transition-all duration-300 border rounded-lg w-[260px] bg-[#FEF4F5]   hover:bg-[#ffd6d6] mx-auto p-4 flex items-center justify-center gap-4 text-xl cursor-pointer"
+							className="transition-all duration-300 border rounded-lg w-[260px] bg-[#FEF4F5]  hover:bg-[#ffd6d6] mx-auto p-4 flex items-center justify-center gap-4 text-xl cursor-pointer"
 							href="mailto:apras.dixit@gmail.com"
 						>
 							<PiMailbox
