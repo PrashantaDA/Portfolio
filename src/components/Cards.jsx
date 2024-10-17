@@ -35,8 +35,8 @@ const Cards = ({ img, title, desc, tech, github, link }) => (
 
 		<div className="dark:text-dtext flex flex-col gap-1 mt-2 text-center h-full">
 			<h2 className="text-lg font-semibold mt-2">{title}</h2>
-			<p className="px-2 text-center text-gray-500 leading-6">{desc}</p>
-			<h3 className="text-sm font-semibold pt-2 mt-auto">
+			<p className="px-2 text-sm text-center text-gray-500 leading-6">{desc}</p>
+			<h3 className="text-[10px] font-semibold pt-2 mt-auto">
 				{tech &&
 					tech.map((item, index) => (
 						<span key={index}>
